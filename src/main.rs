@@ -13,7 +13,7 @@ fn main() {
 fn guess_number() {
     println!("Guess the number!");
 
-    let secret_number = thread_rng().gen_range(1..101);
+    let secret_number = thread_rng().gen_range(1..=100);
 
     loop {
         println!("Please input your guess.");
